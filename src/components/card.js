@@ -26,6 +26,7 @@ export const Cards = ()=>{
                     <div style={{backgroundColor:"red","flex":0.5}}>
                         <div >123</div>
                     </div>
+                
             </div>
         </>
     )

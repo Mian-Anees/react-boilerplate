@@ -1,20 +1,32 @@
 import { changeName, changeNo } from "../redux/sampleSlice/sample";
 import { useDispatch, useSelector } from "react-redux"
-import { useHistory, useLocation, useParams } from "react-router-dom"
 
 import { Cards } from "./card";
 import {React} from "react"
 
 export const Dashboard = ()=>{
-    const history = useHistory()
-    const location = useLocation()
-    const {userId} =  useParams()
    const dispatch = useDispatch();
     const {Name,No} =useSelector(state=>state)
-    console.log({userId})
     return (
-        <div >
-           <Cards/> 
+    <>
+        <h1>
+            Hello World
+        </h1>
+        <button onClick={()=>{
+            dispatch(changeName({Name:"ne12w"}))
+            dispatch(changeNo({No:"22"}))
+            }}>
+            click
+        </button>
+        <p>
+            hi
+            {No}--mmmm--{Name}
+        </p>
+        <div>
+            123
+            {No}
         </div>
+        {/* <Cards/> */}
+    </>
     )
 }

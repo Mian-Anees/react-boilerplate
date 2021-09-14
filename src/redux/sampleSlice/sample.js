@@ -16,7 +16,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const sample = createSlice({name:"sampleApp",
 initialState:{
     Name:"123",
-    No:0
+    No:"0"
 },
 reducers:{
      changeName:(state,action)=>{
