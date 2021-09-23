@@ -17,7 +17,7 @@ export const Header=()=>{
                 list.map((res)=>{
                     return(
                         <>
-                            <button style={{backgroundColor:'white', fontFamily:'sans-serif',border:'none',fontSize:'18px'}}>
+                            <button className="nav-bar" style={{backgroundColor:'white', fontFamily:'sans-serif',cursor:'pointer',border:'none',fontSize:'18px'}}>
                                 {res}
                             </button>
                         </>

@@ -8,32 +8,29 @@ code {
 .app-link {
   color:azure
 }
+.nav-bar{
+  background-color:white;
+   font-family:sans-serif;
+   cursor:pointer;
+   border:none;
+   font-size:18px
+}
 
-/* .container-body{
-  padding-left: '200px';
-  margin-right: '200px';
-  margin-left: '200px';
-  padding-right:'200px' ;
-} */
+.nav-bar:hover{
+  color: #efefef;
+}
 
 @media screen and (min-width: 600px) {
   body {
     background-color: aquamarine;
-    
   }
-  /* .container-body{
-    margin-left: 50px;
-    padding-left: 10px;
-    margin-right: 50px;
-    padding-right: 10px;
-    color: gray;
-  } */
 }
 
 @media screen and (min-width: 1024px) {
   body {
     background-color: bisque;
   }
+  
 }
 
 @media screen and (min-width: 1280px) {
