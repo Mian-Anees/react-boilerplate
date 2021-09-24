@@ -1,6 +1,7 @@
 import App from "../App";
 import { Cards } from "../components/card";
 import { Dashboard } from "../components/dashboard";
+import { Home } from "../pages/home";
 
 export const ROUTES = [
   {
@@ -18,6 +19,12 @@ export const ROUTES = [
   {
     path: "/cards",
     component: Cards,
+    exact: true,
+    protected: false,
+  },
+  {
+    path: "/home",
+    component: Home,
     exact: true,
     protected: false,
   },

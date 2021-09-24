@@ -22,19 +22,19 @@ import ScrollContainer from 'react-indiana-drag-scroll'
   
 export const Home =()=>{
     return(
-        <>
+    <>
         <div className="container-body">
             <div  style = {{ display: 'flex',width:'100%',height:'100px',flexDirection:'column'}}>
                 <Header/>
             </div>
-        <ScrollContainer style = {{width:'100%',height:'1200px',backgroundColor:"white",display:'flex',flexDirection:'column'}}>
+        <ScrollContainer style = {{width:'100%',backgroundColor:"white",display:'flex',flexDirection:'column'}}>
             {/* <LeftNav/> */}
             <Body/>
         </ScrollContainer>
-            <div style = {{width:'100%',height:'20px',backgroundColor:"white",display:'flex',flexDirection:'column'}}>
+            <div style = {{width:'100%',height:'20px',display:'flex',flexDirection:'column'}}>
                 <Footer/>
             </div>
         </div>
-        </>
+    </>
     )
 }

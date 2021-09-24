@@ -1,9 +1,24 @@
+import {React, useEffect, useState} from 'react';
+
 import Avatar from 'react-avatar';
-import {React} from 'react';
+import {EXCHANGE_RATES} from '../graphql/queries'
 import logo from '../assets/logo/logoipsum-logo-5.svg'
+import { useHistory } from "react-router-dom";
+import { useQuery } from '@apollo/client';
 
 export const Header=()=>{
-
+    const [datares,setdatares]=useState();
+    const history = useHistory();
+    // useEffect(()=>{
+    //     // c
+    // })[datares]
+    const { loading, error, data } = useQuery(EXCHANGE_RATES);
+    console.log(data,'---','-----');
+    function handleClick() {
+        setdatares(data)
+        console.log(datares,'---','-----');
+        history.push("/dashboard");
+      }
     const list=['Home','Products','Services','Categories','Settings'];
      
     return(
@@ -17,8 +32,9 @@ export const Header=()=>{
                 list.map((res)=>{
                     return(
                         <>
-                            <button className="nav-bar" style={{backgroundColor:'white', fontFamily:'sans-serif',cursor:'pointer',border:'none',fontSize:'18px'}}>
-                                {res}
+                            <button className="nav-bar" onClick={handleClick}
+                                style={{backgroundColor:'white', fontFamily:'sans-serif',cursor:'pointer',border:'none',fontSize:'18px'}}>
+                                    {res}
                             </button>
                         </>
                     )

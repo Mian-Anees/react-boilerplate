@@ -19,8 +19,8 @@ export const Cards = ()=>{
             <div style={styleObject} >
                     <div style={{height:"220px",width:"200px",}}>
                     <img style={{height:"100%",width:"100%",borderRadius:"5px"}} 
-                    src = 'https://media.istockphoto.com/photos/in-the-hands-of-trees-growing-seedlings-bokeh-green-background-female-picture-id1181366400?k=20&m=1181366400&s=612x612&w=0&h=p-iaAHKhxsF6Wqrs7QjbwjOYAFBrJYhxlLLXEX1wsGs='
-                    // src="https://via.placeholder.com/500x500"
+                    // src = 'https://media.istockphoto.com/photos/in-the-hands-of-trees-growing-seedlings-bokeh-green-background-female-picture-id1181366400?k=20&m=1181366400&s=612x612&w=0&h=p-iaAHKhxsF6Wqrs7QjbwjOYAFBrJYhxlLLXEX1wsGs='
+                    src="https://via.placeholder.com/500x500"
                     >
                     </img>
                     </div>
